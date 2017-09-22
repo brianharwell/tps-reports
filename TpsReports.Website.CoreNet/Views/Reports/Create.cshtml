@@ -1,0 +1,25 @@
+﻿@model TpsReports.Website.CoreNet.ViewModels.CreateReportViewModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm("Create", "Reports", FormMethod.Post))
+        {
+            <form method="post" class="form">
+                <div class="form-group">
+                    <label>Report Name</label>
+                    @Html.TextBoxFor(x => x.Name, new Dictionary<string, object> {{"class", "form-control"}})
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-default">SUBMIT</button>
+                </div>
+            </form>
+        }
+    </div>
+</div>
+

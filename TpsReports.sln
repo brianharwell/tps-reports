@@ -9,6 +9,10 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpsReports.Website.461", "TpsReports.Website.461\TpsReports.Website.461.csproj", "{95BCA6F0-5927-4931-8B02-77061F2FA124}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpsReports.Website.CoreNet", "TpsReports.Website.CoreNet\TpsReports.Website.CoreNet.csproj", "{6EADAB25-FEAB-4F8E-BB41-6230E0855C12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpsReports.Website.Core", "TpsReports.Website.Core\TpsReports.Website.Core.csproj", "{5C9648AF-8803-40A6-9400-FD5C76A3ED4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{95BCA6F0-5927-4931-8B02-77061F2FA124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95BCA6F0-5927-4931-8B02-77061F2FA124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95BCA6F0-5927-4931-8B02-77061F2FA124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EADAB25-FEAB-4F8E-BB41-6230E0855C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EADAB25-FEAB-4F8E-BB41-6230E0855C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EADAB25-FEAB-4F8E-BB41-6230E0855C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EADAB25-FEAB-4F8E-BB41-6230E0855C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9648AF-8803-40A6-9400-FD5C76A3ED4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9648AF-8803-40A6-9400-FD5C76A3ED4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9648AF-8803-40A6-9400-FD5C76A3ED4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9648AF-8803-40A6-9400-FD5C76A3ED4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
