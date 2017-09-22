@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  tpsreports-website-core:
+    image: tpsreports-website-core
+    build:
+      context: ./TpsReports.Website
+      dockerfile: Dockerfile
