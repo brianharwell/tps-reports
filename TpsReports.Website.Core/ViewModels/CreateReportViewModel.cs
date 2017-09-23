@@ -1,4 +1,4 @@
-﻿namespace TpsReports.Website.Pages.ViewModels
+﻿namespace TpsReports.Website.Core.ViewModels
 {
     public class CreateReportViewModel
     {

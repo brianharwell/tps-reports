@@ -1,9 +1,9 @@
 using System;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using TpsReports.Website.Core.ViewModels;
 
-namespace TpsReports.Website.Pages.Reports
+namespace TpsReports.Website.Core.Pages.Reports
 {
     public class CreateModel : PageModel
     {

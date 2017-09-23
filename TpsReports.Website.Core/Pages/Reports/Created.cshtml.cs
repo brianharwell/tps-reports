@@ -1,11 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace TpsReports.Website.Pages.Reports
+namespace TpsReports.Website.Core.Pages.Reports
 {
     public class CreatedModel : PageModel
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace TpsReports.Website.Core.Pages
+namespace TpsReports.Website.Pages
 {
     public class IndexModel : PageModel
     {
