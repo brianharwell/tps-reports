@@ -2,3 +2,4 @@
 !obj/Docker/publish/*
 !obj/Docker/empty/
 !bin/Release/PublishOutput/*
+!bin/release/netcoreapp2.0/*
