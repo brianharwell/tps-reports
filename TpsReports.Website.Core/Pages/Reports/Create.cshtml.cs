@@ -1,6 +1,9 @@
 using System;
+using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
+using RabbitMQ.Client;
 using TpsReports.Website.Core.ViewModels;
 
 namespace TpsReports.Website.Core.Pages.Reports
@@ -28,6 +31,8 @@ namespace TpsReports.Website.Core.Pages.Reports
 
             GenerateString();
 
+            Publish(createReportViewModel);
+
             return RedirectToPage("Created");
         }
 
@@ -40,6 +45,24 @@ namespace TpsReports.Website.Core.Pages.Reports
                 var random = new Random(iter);
 
                 foo = foo + char.ConvertFromUtf32(random.Next(0, 10_175));
+            }
+        }
+
+        public void Publish(CreateReportViewModel createReportViewModel)
+        {
+            var connectionFactory = new ConnectionFactory() { HostName = "bugs", UserName = "guest", Password = "guest" };
+
+            using (var connection = connectionFactory.CreateConnection())
+            {
+                using (var model = connection.CreateModel())
+                {
+                    model.QueueDeclare(queue: "core", durable: true, exclusive: false, autoDelete: false, arguments: null);
+
+                    var json = JsonConvert.SerializeObject(createReportViewModel);
+                    var body = Encoding.UTF8.GetBytes(json);
+
+                    model.BasicPublish(exchange: string.Empty, routingKey: "core", mandatory: false, basicProperties: null, body: body);
+                }
             }
         }
     }
