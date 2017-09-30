@@ -19,6 +19,7 @@ namespace TpsReports.Website.CoreNet.Controllers
         public IActionResult Create(CreateReportViewModel createReportViewModel)
         {
             createReportViewModel.Host = Environment.MachineName;
+            createReportViewModel.Version = 1;
 
             TempData["ReportName"] = createReportViewModel.Name;
 
@@ -38,7 +39,7 @@ namespace TpsReports.Website.CoreNet.Controllers
         {
             string foo = string.Empty;
 
-            for (int iter = 0; iter < 1000; iter++)
+            for (int iter = 0; iter < 10000; iter++)
             {
                 var random = new Random(iter);
 

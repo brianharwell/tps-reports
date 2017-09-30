@@ -4,5 +4,6 @@
     {
         public string Name { get; set; }
         public string Host { get; set; }
+        public int Version { get; set; }
     }
 }
